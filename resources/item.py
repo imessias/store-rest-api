@@ -98,4 +98,4 @@ class ItemList(Resource):
         #connection.commit()
         #connection.close()
 
-        return {"items": [item.json() for item in ItemModel.query.all()]}
+        return {"items": [item.json() for item in ItemModel.find_all()]}
